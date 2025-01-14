@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { StoreContext } from "@/store/StoreContext";
-import categoryData from '../pages/api/categories.json';
+import categoryData from '@/api/categories.json';
 import {Tabs, Tab, Slider, Checkbox, Select, SelectItem} from "@nextui-org/react";
 import AssuredLogo from "./AssuredLogo";
 

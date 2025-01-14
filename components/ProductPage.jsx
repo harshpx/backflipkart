@@ -1,9 +1,8 @@
 import React,{useContext, useEffect} from "react";
 import { StoreContext } from "@/store/StoreContext";
 import dynamic from "next/dynamic";
-const CategoryBar = dynamic(()=> import("@/components/FilterBar"),{ssr:false});
 const Product = dynamic(()=> import("@/components/Product"),{ssr:false});
-import productData from '../pages/api/products.json';
+import productData from '@/api/products.json';
 
 const ProductPage = () => {
     const { products, setProducts, filteredProducts, setFilteredProducts, filters, setFilters} = useContext(StoreContext);
